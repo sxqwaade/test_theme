@@ -1,0 +1,78 @@
+@import "sassCore/base";
+.pagecontent{
+  background-color: #f7f7f7;
+  section{
+    padding: 10px;
+    .banner{
+      width: 100%;
+      @include box-sizing(border-box);
+      border: 1px solid #ebebeb;
+      border-bottom: none;
+      position: relative;
+      &:after{
+        width:0;
+        content:"";
+        position: absolute;
+        display: block;
+        border-bottom: 10px solid #FFFFFF;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+        bottom: 0px;
+        left: 50%;
+        @include transform(translateX(-50%));
+      }
+      img{
+        width: 100%;
+      }
+    }
+    article{
+      padding: 13px;
+      color: #333333;
+      background-color: #FFFFFF;
+      @include box-sizing(border-box);
+      border: 1px solid #ebebeb;
+      border-top: none;
+      h3{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+    ul{
+      @include clearfix();
+      margin-top: 10px;
+      @include flex(1);
+      @include display-flex();
+      li{
+        float: left;
+        margin-right: 10px;
+        width: 32%;
+        .img{
+          background-color: #FFFFFF;
+          width: 100%;
+          min-height: 1em;
+          @include box-sizing(border-box);
+          border: 1px solid #ebebeb;
+        }
+        p{
+          font-size: 13px;
+          line-height: 15px;
+          color:#999999;
+          padding: 5px 0;
+        }
+        .price{
+          font-size: 12px;
+          color:#000000;
+          margin-bottom: 5px;
+        }
+        &:last-child{
+          margin:0;
+        }
+      }
+    }
+  }
+}
