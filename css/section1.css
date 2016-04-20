@@ -17,7 +17,9 @@
       height: 260px;
       float: left;
       margin: 0 8px 8px 0;
-      color: #000000; }
+      color: #000000;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
       .section1 ul li .protitle {
         font-size: 31px;
         line-height: 36px;

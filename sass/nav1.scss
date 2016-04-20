@@ -1,3 +1,29 @@
+@import "sassCore/base";
+@import "sassCore/ext/animate/slide";
+@include animate-slideInUp();
 .nav1{
+  position: absolute;
+  width: 60px;
+  right:-90px;
+  top:340px;
 
+  li,.backtoTop{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    line-height:20px;
+    background-color: #FFFFFF;
+    color:#000000;
+    display: block;
+    margin-bottom: 10px;
+    @include transition(all 0.3s ease);
+    @include border-radius(50%);
+    text-align: center;
+    font-size:14px;
+    cursor: pointer;
+    &.on,&:hover{
+      background-color: #000000;
+      color:#FFFFFF;
+    }
+  }
 }

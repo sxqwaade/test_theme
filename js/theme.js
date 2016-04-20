@@ -6,6 +6,33 @@ $(function(){
         isResizeBound: false,
         isAnimated: true
     });
+
+    $(".right-nav li").click(function(){
+        $(".right-nav li").removeClass("on");
+        $(this).addClass('on');
+        var index = $(this).index();
+        //$("body,html").stop().animate({scrollTop:$(".group ul:eq("+index+")").offset().top},500,'swing');
+    });
+
+    var right_nav = new scrollNav();
+    right_nav.init();
+    /*var topArr = [];
+    for(var i =0;i<$(".group ul").length;i++){
+        topArr.push($(".group ul").eq(i).offset().top);
+    }*/
+
+    /*$(window).scroll(function(){
+        var h = $(".right-nav").height(),
+            wh = $(window).height(),
+            st = $(window).scrollTop(),
+            gt = $(".group").offset().top;
+        if(st > gt){
+            $(".right-nav").stop().animate({top:st+Math.floor((wh-h)/2)},700,'swing');
+        }else{
+            $(".right-nav").stop().animate({top:340},700,'swing');
+        }
+    });*/
+
     var Slider = function(){
         var sildnum = $(".J_ui_postFloat > li").length,ison;
         if(sildnum == 1){
@@ -29,9 +56,100 @@ $(function(){
             completes: function (o) {//初始化完成执行动作
             }
         });
-    }
+    };
     Slider();
+
 });
+function scrollNav(opt){
+    this.defaults = {
+        wrap: ".group",
+        grid:".group ul",
+        scrollobj:".right-nav",
+        linkobj:".right-nav li",
+        backtotop:".backtoTop"
+    };
+    $.extend(this.defaults,opt);
+    this.gridHeight = $(this.defaults.grid).height();
+    this.gridArea = [];
+};
+scrollNav.prototype={
+    init:function(){
+        var t = this;
+        t.moveto();
+        t.scrollHandle();
+        t.backtotop();
+        t.pushArea();
+        $(window).scroll(function(event){
+            t.scrollHandle();
+        });
+        $(window).resize(function(event) {
+            t.scrollHandle();
+        });
+        t.Anchorposition("down");
+        t.scroll(function(direction){
+            t.Anchorposition(direction)
+        });
+    },
+    scrollHandle:function(){
+        var t = this;
+        var st = parseInt($(t.defaults.wrap).offset().top),
+            ws = parseInt($(window).scrollTop()),
+            right= parseInt($(window).width()-($(t.defaults.wrap).offset().left+$(t.defaults.wrap).width()+$(t.defaults.scrollobj).width()+30));
+        if(ws > st){
+            $(t.defaults.scrollobj).css({"position":"fixed","right":right,top:"100px"});
+        }else{
+            $(t.defaults.scrollobj).css({"position":"absolute","right":"-90px",top:"340px"});
+        }
+    },
+    pushArea:function(){
+        var t = this;
+        $(t.defaults.grid).each(function(){
+            t.gridArea.push($(this).offset().top);
+        });
+    },
+    Anchorposition:function(arrow){
+        var t = this,
+            wh = $(window).height(),
+            ws = arrow == "up" || Math.round(wh-t.gridHeight) <= 0 ? parseInt($(window).scrollTop()+340) : parseInt($(window).scrollTop()) + Math.round((wh-t.gridHeight)/2+20);
+
+        for(var i=0;i<t.gridArea.length;i++){
+            if(i == t.gridArea.length-1 && ws >= parseInt(t.gridArea[i])){
+                $(t.defaults.linkobj).eq(i).addClass('on');
+                return false
+            }
+            if(ws >= parseInt(t.gridArea[i]) && ws < parseInt(t.gridArea[i+1])){
+                $(t.defaults.linkobj).eq(i).addClass('on');
+            }else{
+                $(t.defaults.linkobj).eq(i).removeClass('on');
+            }
+        }
+    },
+    scroll:function(fn){
+        var beforeScrollTop = $(window).scrollTop(),
+            fn = fn || function() {};
+        $(window).scroll(function(){
+            var afterScrollTop = $(window).scrollTop(),
+                delta = afterScrollTop - beforeScrollTop;
+            if( delta === 0 ) return false;
+            fn( delta > 0 ? "down" : "up" );
+            beforeScrollTop = afterScrollTop;
+        });
+    },
+    moveto:function(){
+        var t = this;
+        $(t.defaults.linkobj).click(function(){
+            var index = $(this).index(),
+                ot = $(t.defaults.grid).eq(index).offset().top;
+            $("body,html").animate({scrollTop:ot},600,"swing");
+        })
+    },
+    backtotop:function(){
+        var t = this;
+        $(t.defaults.backtotop).click(function(){
+            $("body,html").animate({scrollTop:"0px"},600,"swing")
+        })
+    }
+};
 !(function($){
     var picScroll = function () {
         var arg = arguments,
