@@ -1,0 +1,68 @@
+.section1 ul:before, .section1 ul li .probottom:before, .section1 ul:after, .section1 ul li .probottom:after {
+  content: "";
+  display: table; }
+.section1 ul:after, .section1 ul li .probottom:after {
+  clear: both; }
+
+.section1 {
+  width: 1080px;
+  margin: 20px auto 0;
+  font-family: "Microsoft Yahei"; }
+  .section1 ul {
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 8px 0 0 8px; }
+    .section1 ul li {
+      width: 260px;
+      height: 260px;
+      float: left;
+      margin: 0 8px 8px 0;
+      color: #000000; }
+      .section1 ul li .protitle {
+        font-size: 31px;
+        line-height: 36px;
+        padding: 40px 15px 25px;
+        font-weight: normal; }
+      .section1 ul li .prodec {
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        padding: 0 15px; }
+      .section1 ul li .probottom {
+        padding: 0 15px; }
+        .section1 ul li .probottom b {
+          font-size: 16px;
+          margin-right: 12px;
+          float: left;
+          display: block;
+          line-height: 25px; }
+        .section1 ul li .probottom .buylink {
+          line-height: 25px;
+          background-color: #b20e19;
+          padding: 0 5px;
+          color: #FFFFFF;
+          font-size: 14px;
+          text-align: center;
+          border-radius: 5px;
+          display: inline-block; }
+          .section1 ul li .probottom .buylink i {
+            width: 20px;
+            height: 15px;
+            display: inline-block;
+            background: url("../images/cart-icon.png") no-repeat center center transparent;
+            margin-right: 3px;
+            vertical-align: top;
+            margin-top: 5px; }
+      .section1 ul li.twoXone {
+        width: 528px;
+        height: 260px; }
+      .section1 ul li.twoXtwo {
+        width: 528px;
+        height: 528px; }
+      .section1 ul li.oneXtwo {
+        width: 260px;
+        height: 528px; }
+        .section1 ul li.oneXtwo .probottom {
+          margin-top: 80px; }
+
+/*# sourceMappingURL=section1.css.map */

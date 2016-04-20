@@ -1,0 +1,76 @@
+@import "sassCore/base";
+.section1{
+  width: 1080px;
+  margin:20px auto 0;
+  font-family: "Microsoft Yahei";
+  ul{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 8px 0 0 8px;
+    @include clearfix();
+    li{
+      width: 260px;
+      height: 260px;
+      float: left;
+      margin: 0 8px 8px 0;
+      color: #000000;
+      .protitle{
+        font-size: 31px;
+        line-height: 36px;
+        padding: 40px 15px 25px;
+        font-weight: normal;
+      }
+      .prodec{
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+      }
+      .probottom{
+        padding: 0 15px;
+        @include clearfix();
+        b{
+          font-size: 16px;
+          margin-right: 12px;
+          float: left;
+          display: block;
+          line-height: 25px;
+        }
+        .buylink{
+          line-height: 25px;
+          background-color: #b20e19;
+          padding: 0 5px;
+          color:#FFFFFF;
+          font-size: 14px;
+          text-align: center;
+          border-radius: 5px;
+          display: inline-block;
+          i{
+            width: 20px;
+            height: 15px;
+            display: inline-block;
+            background: url("../images/cart-icon.png") no-repeat center center transparent;
+            margin-right: 3px;
+            vertical-align: top;
+            margin-top: 5px;
+          }
+        }
+      }
+      &.twoXone{
+        width: 528px;
+        height: 260px;
+      }
+      &.twoXtwo{
+        width: 528px;
+        height: 528px;
+      }
+      &.oneXtwo{
+        width: 260px;
+        height: 528px;
+        .probottom{
+          margin-top: 80px;
+        }
+      }
+    }
+  }
+}

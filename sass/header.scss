@@ -1,0 +1,92 @@
+.header{
+  width: 1080px;
+  margin:0 auto;
+  position: relative;
+  img{
+    width: 1080px;
+  }
+}
+
+.J_ui_picSwitch {
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  width: 1080px;
+}
+.J_ui_picSwitch:hover{
+  .J_ui_butPost_a,.J_ui_butPost_b{
+    opacity: 1;
+  }
+}
+.J_ui_picSwitch .J_ui_post {
+  left: 0;
+  position: relative;
+  top: 0;
+}
+.J_ui_picSwitch .J_ui_post li {
+  position: relative;
+}
+.J_ui_picSwitch .J_ui_a {
+  bottom: 10px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+.J_ui_picSwitch .J_ui_a li {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  height: 12px;
+  line-height: 20px;
+  margin-left: 6px;
+  text-align: center;
+  width: 12px;
+  transition:all 0.3s;
+}
+.J_ui_picSwitch .J_ui_a li.on {
+  background-color: #e24c52;
+  color: #fff;
+  border: 1px solid #FFF;
+}
+.J_ui_picSwitch .J_ui_postFloat li {
+  float: left;
+  overflow: hidden;
+}
+.J_ui_picSwitch .J_ui_postPost li {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.J_ui_picSwitch .J_ui_butPost_a {
+  background: url("http://www.shihuo.cn/images/trade/shaiwu/shaiwuindex/l1.png") no-repeat scroll left top transparent;
+  cursor: pointer;
+  display: block;
+  height: 62px;
+  left: 0;
+  position: absolute;
+  top: 120px;
+  width: 34px;
+  filter:progid:dximagetransform.microsoft.alphaimageloader(src='http://www.shihuo.cn/images/trade/shaiwu/shaiwuindex/l1.png');
+  filter:alpha(opacity=0);
+  opacity: 0;
+  zoom:1;
+  transition:all 0.3s;
+}
+.J_ui_picSwitch .J_ui_butPost_b {
+  background: url("http://www.shihuo.cn/images/trade/shaiwu/shaiwuindex/r1.png") no-repeat scroll right top transparent;
+  cursor: pointer;
+  display: block;
+  height: 62px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 34px;
+  zoom:1;
+  filter:progid:dximagetransform.microsoft.alphaimageloader(src='http://www.shihuo.cn/images/trade/shaiwu/shaiwuindex/r1.png');
+  filter:alpha(opacity=0);
+  opacity: 0;
+  transition:all 0.3s;
+}
