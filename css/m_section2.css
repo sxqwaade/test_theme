@@ -1,14 +1,14 @@
-.pagecontent section ul:before, .pagecontent section ul:after {
+.pagecontent.theme2 section ul:before, .pagecontent.theme2 section ul:after {
   content: "";
   display: table; }
-.pagecontent section ul:after {
+.pagecontent.theme2 section ul:after {
   clear: both; }
 
-.pagecontent {
+.pagecontent.theme2 {
   background-color: #f7f7f7; }
-  .pagecontent section {
+  .pagecontent.theme2 section {
     padding: 10px 10px 0 10px; }
-    .pagecontent section .banner {
+    .pagecontent.theme2 section .banner {
       width: 100%;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -16,9 +16,9 @@
       border: 1px solid #ebebeb;
       border-bottom: none;
       position: relative; }
-      .pagecontent section .banner img {
+      .pagecontent.theme2 section .banner img {
         width: 100%; }
-    .pagecontent section article {
+    .pagecontent.theme2 section article {
       padding: 13px;
       color: #333333;
       background-color: #FFFFFF;
@@ -27,16 +27,16 @@
       box-sizing: border-box;
       border: 1px solid #ebebeb;
       border-top: none; }
-      .pagecontent section article h3 {
+      .pagecontent.theme2 section article h3 {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 10px; }
-      .pagecontent section article p {
+      .pagecontent.theme2 section article p {
         font-size: 12px;
         line-height: 24px; }
-    .pagecontent section ul {
+    .pagecontent.theme2 section ul {
       margin-top: 10px; }
-      .pagecontent section ul li {
+      .pagecontent.theme2 section ul li {
         float: left;
         width: 49%;
         margin: 0 2% 2% 0;
@@ -46,27 +46,27 @@
         border: 1px solid #ebebeb;
         background-color: #FFFFFF;
         padding: 5px 10px 10px 10px; }
-        .pagecontent section ul li:nth-child(even) {
+        .pagecontent.theme2 section ul li:nth-child(even) {
           margin-right: 0px; }
-        .pagecontent section ul li .img {
+        .pagecontent.theme2 section ul li .img {
           width: 100%;
           min-height: 1em;
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
           box-sizing: border-box; }
-          .pagecontent section ul li .img img {
+          .pagecontent.theme2 section ul li .img img {
             min-height: 110px; }
-        .pagecontent section ul li p {
+        .pagecontent.theme2 section ul li p {
           font-size: 13px;
           line-height: 15px;
           color: #999999;
           padding: 5px 0; }
-        .pagecontent section ul li .price {
+        .pagecontent.theme2 section ul li .price {
           font-size: 12px;
           color: #000000;
           margin-top: 5px;
           font-weight: bold; }
-        .pagecontent section ul li:last-child {
+        .pagecontent.theme2 section ul li:last-child {
           margin: 0; }
 
 /*# sourceMappingURL=m_section2.css.map */
