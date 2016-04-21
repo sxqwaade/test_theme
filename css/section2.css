@@ -1,0 +1,88 @@
+.section2 ul:before, .section2 ul li .probottom:before, .section2 ul:after, .section2 ul li .probottom:after {
+  content: "";
+  display: table; }
+.section2 ul:after, .section2 ul li .probottom:after {
+  clear: both; }
+
+.section2 {
+  width: 1080px;
+  margin: 20px auto 0;
+  font-family: "Microsoft Yahei";
+  overflow: hidden; }
+  .section2 ul {
+    width: 1083px;
+    margin-bottom: 30px; }
+    .section2 ul:first-child {
+      margin-top: 15px; }
+    .section2 ul li {
+      width: 358px;
+      height: 358px;
+      float: left;
+      margin: 0 3px 3px 0;
+      color: #333333;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      background-color: #FFFFFF;
+      position: relative; }
+      .section2 ul li img {
+        width: 100%; }
+      .section2 ul li .protitle {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 40px 30px 20px;
+        padding-left: 5px;
+        font-weight: normal;
+        border-left: 6px solid #e5e5e5; }
+      .section2 ul li .prodec {
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        padding: 0 30px; }
+      .section2 ul li .probottom {
+        padding: 0 30px;
+        position: absolute;
+        bottom: 25px;
+        width: 298px; }
+        .section2 ul li .probottom b {
+          font-size: 16px;
+          margin-right: 12px;
+          float: left;
+          display: block;
+          line-height: 25px; }
+        .section2 ul li .probottom .buylink {
+          line-height: 25px;
+          background-color: #b20e19;
+          padding: 0 5px;
+          color: #FFFFFF;
+          font-size: 14px;
+          text-align: center;
+          border-radius: 5px;
+          display: inline-block; }
+          .section2 ul li .probottom .buylink i {
+            width: 20px;
+            height: 15px;
+            display: inline-block;
+            background: url("../images/cart-icon.png") no-repeat center center transparent;
+            margin-right: 3px;
+            vertical-align: top;
+            margin-top: 5px; }
+      .section2 ul li:nth-child(even):after {
+        content: "";
+        display: block;
+        width: 0;
+        border-bottom: 24px solid #FFFFFF;
+        border-left: 22px solid transparent;
+        border-right: 22px solid transparent;
+        top: -24px;
+        bottom: auto;
+        left: 50%;
+        margin-left: -22px;
+        position: absolute;
+        z-index: 10; }
+      .section2 ul li:nth-child(2):after {
+        border-top: 24px solid #FFFFFF;
+        border-bottom: none;
+        bottom: -24px;
+        top: auto; }
+
+/*# sourceMappingURL=section2.css.map */

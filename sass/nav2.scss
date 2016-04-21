@@ -1,0 +1,44 @@
+@import "sassCore/base";
+@import "sassCore/ext/animate/slide";
+@include animate-slideInUp();
+.nav2{
+  position: absolute;
+  width: 60px;
+  right:-90px;
+  top:340px;
+
+  li,.backtoTop{
+    width: 90px;
+    height: 43px;
+    line-height:43px;
+    background-color: #FFFFFF;
+    color:#000000;
+    display: block;
+    margin-bottom: 10px;
+    @include transition(all 0.3s ease);
+    text-align: center;
+    font-size:14px;
+    cursor: pointer;
+    position: relative;
+    &:before{
+      content:"";
+      width: 0;
+      position: absolute;
+      left: -14px;
+      border-right:14px solid #FFFFFF;
+      border-top:7px solid transparent;
+      border-bottom: 7px solid transparent;
+      top: 50%;
+      margin-top:-7px;
+      display: block;
+      @include transition(all 0.3s ease);
+    }
+    &.on,&:hover{
+      background-color: #000000;
+      color:#FFFFFF;
+      &:before{
+        border-right:14px solid #000000;
+      }
+    }
+  }
+}

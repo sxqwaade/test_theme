@@ -1,0 +1,61 @@
+.slideInUp {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px); }
+  100% {
+    -webkit-transform: translateY(0); } }
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px); }
+  100% {
+    transform: translateY(0); } }
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp; }
+
+.nav2 {
+  position: absolute;
+  width: 60px;
+  right: -90px;
+  top: 340px; }
+  .nav2 li, .nav2 .backtoTop {
+    width: 90px;
+    height: 43px;
+    line-height: 43px;
+    background-color: #FFFFFF;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative; }
+    .nav2 li:before, .nav2 .backtoTop:before {
+      content: "";
+      width: 0;
+      position: absolute;
+      left: -14px;
+      border-right: 14px solid #FFFFFF;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      top: 50%;
+      margin-top: -7px;
+      display: block;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .nav2 li.on, .nav2 li:hover, .nav2 .backtoTop.on, .nav2 .backtoTop:hover {
+      background-color: #000000;
+      color: #FFFFFF; }
+      .nav2 li.on:before, .nav2 li:hover:before, .nav2 .backtoTop.on:before, .nav2 .backtoTop:hover:before {
+        border-right: 14px solid #000000; }
+
+/*# sourceMappingURL=nav2.css.map */

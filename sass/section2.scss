@@ -1,34 +1,47 @@
 @import "sassCore/base";
-.section1{
+.section2{
   width: 1080px;
   margin:20px auto 0;
   font-family: "Microsoft Yahei";
+  overflow: hidden;
   ul{
-    background-color: #FFFFFF;
-    margin-bottom: 10px;
-    padding: 8px 0 0 8px;
+    width: 1083px;
+    margin-bottom: 30px;
     @include clearfix();
+    &:first-child{
+      margin-top:15px;
+    }
     li{
-      width: 260px;
-      height: 260px;
+      width: 358px;
+      height: 358px;
       float: left;
-      margin: 0 8px 8px 0;
+      margin: 0 3px 3px 0;
       color: #333333;
       @include transition(all 0.3s ease);
+      background-color: #FFFFFF;
+      position: relative;
+      img{
+        width: 100%;
+      }
       .protitle{
-        font-size: 31px;
+        font-size: 30px;
         line-height: 36px;
-        padding: 40px 15px 25px;
+        margin: 40px 30px 20px;
+        padding-left: 5px;
         font-weight: normal;
+        border-left:6px solid #e5e5e5;
       }
       .prodec{
         font-size: 12px;
         line-height: 30px;
         margin-bottom: 20px;
-        padding: 0 15px;
+        padding: 0 30px;
       }
       .probottom{
-        padding: 0 15px;
+        padding: 0 30px;
+        position: absolute;
+        bottom:25px;
+        width: 298px;
         @include clearfix();
         b{
           font-size: 16px;
@@ -57,20 +70,25 @@
           }
         }
       }
-      &.twoXone{
-        width: 528px;
-        height: 260px;
+      &:nth-child(even):after{
+        content:"";
+        display: block;
+        width: 0;
+        border-bottom:24px solid #FFFFFF;
+        border-left: 22px solid transparent;
+        border-right:22px solid transparent;
+        top: -24px;
+        bottom: auto;
+        left: 50%;
+        margin-left:-22px;
+        position: absolute;
+        z-index: 10;
       }
-      &.twoXtwo{
-        width: 528px;
-        height: 528px;
-      }
-      &.oneXtwo{
-        width: 260px;
-        height: 528px;
-        .probottom{
-          margin-top: 80px;
-        }
+      &:nth-child(2):after{
+        border-top:24px solid #FFFFFF;
+        border-bottom: none;
+        bottom: -24px;
+        top: auto;
       }
     }
   }
