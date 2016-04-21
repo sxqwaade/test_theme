@@ -1,0 +1,73 @@
+@import "sassCore/base";
+.pagecontent{
+  background-color: #f7f7f7;
+  section{
+    padding: 10px 10px 0 10px;
+    .banner{
+      width: 100%;
+      @include box-sizing(border-box);
+      border: 1px solid #ebebeb;
+      border-bottom: none;
+      position: relative;
+      img{
+        width: 100%;
+      }
+    }
+    article{
+      padding: 13px;
+      color: #333333;
+      background-color: #FFFFFF;
+      @include box-sizing(border-box);
+      border: 1px solid #ebebeb;
+      border-top: none;
+      h3{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+    ul{
+      @include clearfix();
+      margin-top: 10px;
+      li{
+        float: left;
+        width: 49%;
+        margin:0 2% 2% 0;
+        @include box-sizing(border-box);
+        border: 1px solid #ebebeb;
+        background-color: #FFFFFF;
+        padding: 5px 10px 10px 10px;
+        &:nth-child(even){
+          margin-right: 0px;
+        }
+        .img{
+          width: 100%;
+          min-height: 1em;
+          @include box-sizing(border-box);
+          img{
+            min-height: 110px;
+          }
+        }
+        p{
+          font-size: 13px;
+          line-height: 15px;
+          color:#999999;
+          padding: 5px 0;
+        }
+        .price{
+          font-size: 12px;
+          color:#000000;
+          margin-top: 5px;
+          font-weight: bold;
+        }
+        &:last-child{
+          margin:0;
+        }
+      }
+    }
+  }
+}

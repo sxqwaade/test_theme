@@ -1,0 +1,102 @@
+.section4 .grid:before, .section4 .grid ul:before, .section4 .grid ul li .probottom:before, .section4 .grid:after, .section4 .grid ul:after, .section4 .grid ul li .probottom:after {
+  content: "";
+  display: table; }
+.section4 .grid:after, .section4 .grid ul:after, .section4 .grid ul li .probottom:after {
+  clear: both; }
+
+.section4 {
+  width: 1080px;
+  margin: 20px auto 0;
+  font-family: "Microsoft Yahei";
+  overflow: hidden;
+  color: #333333; }
+  .section4 .grid {
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+    padding-top: 14px; }
+    .section4 .grid .text {
+      position: relative;
+      width: 278px;
+      padding: 20px;
+      float: left;
+      height: 618px; }
+      .section4 .grid .text .info h3 {
+        font-size: 31px;
+        font-weight: normal;
+        line-height: 36px;
+        border-left: 6px solid #e5e5e5;
+        padding-left: 5px; }
+      .section4 .grid .text .info p {
+        font-size: 12px;
+        line-height: 30px;
+        margin-top: 15px; }
+      .section4 .grid .text .banner {
+        display: block;
+        position: absolute;
+        bottom: 14px;
+        width: 246px;
+        height: 246px;
+        left: 30px;
+        overflow: hidden; }
+        .section4 .grid .text .banner img {
+          width: 246px;
+          border-radius: 10px; }
+    .section4 .grid ul {
+      width: 762px;
+      float: left; }
+      .section4 .grid ul:first-child {
+        margin-top: 10px; }
+      .section4 .grid ul li {
+        width: 240px;
+        height: 315px;
+        float: left;
+        margin: 0 14px 14px 0;
+        color: #333333;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        background-color: #FFFFFF;
+        position: relative;
+        overflow: hidden; }
+        .section4 .grid ul li .proimg {
+          padding: 15px 0;
+          height: 200px;
+          overflow: hidden; }
+          .section4 .grid ul li .proimg img {
+            width: 220px;
+            display: block;
+            margin: 0 auto; }
+        .section4 .grid ul li .protitle {
+          font-size: 14px;
+          height: 40px;
+          line-height: 20px;
+          padding: 0 20px;
+          text-align: left; }
+        .section4 .grid ul li .probottom {
+          margin-top: 10px;
+          padding: 0 20px; }
+          .section4 .grid ul li .probottom b {
+            font-size: 16px;
+            margin-right: 12px;
+            float: left;
+            display: block;
+            line-height: 25px; }
+          .section4 .grid ul li .probottom .buylink {
+            line-height: 25px;
+            background-color: #000000;
+            padding: 0 5px;
+            color: #FFFFFF;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 5px;
+            display: inline-block;
+            float: right; }
+            .section4 .grid ul li .probottom .buylink i {
+              width: 20px;
+              height: 15px;
+              display: inline-block;
+              background: url("../images/cart-icon.png") no-repeat center center transparent;
+              margin-right: 3px;
+              vertical-align: top;
+              margin-top: 5px; }
+
+/*# sourceMappingURL=section4.css.map */

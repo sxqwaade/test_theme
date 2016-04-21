@@ -1,0 +1,90 @@
+.section3 ul:before, .section3 ul li .probottom:before, .section3 ul:after, .section3 ul li .probottom:after {
+  content: "";
+  display: table; }
+.section3 ul:after, .section3 ul li .probottom:after {
+  clear: both; }
+
+.section3 {
+  width: 1080px;
+  margin: 20px auto 0;
+  font-family: "Microsoft Yahei";
+  overflow: hidden; }
+  .section3 ul {
+    width: 1083px;
+    margin-bottom: 10px; }
+    .section3 ul:first-child {
+      margin-top: 10px; }
+    .section3 ul li {
+      width: 269px;
+      height: 332px;
+      float: left;
+      margin-right: 1px;
+      color: #333333;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      background-color: #FFFFFF;
+      position: relative;
+      overflow: hidden; }
+      .section3 ul li.text {
+        position: relative; }
+        .section3 ul li.text .banner img {
+          width: 100%; }
+        .section3 ul li.text .info {
+          width: 220px;
+          background-color: rgba(255, 255, 255, 0.85);
+          background-color: #FFFFFF\9;
+          position: absolute;
+          left: 15px;
+          bottom: 20px;
+          padding: 10px; }
+          .section3 ul li.text .info h3 {
+            font-size: 31px;
+            font-weight: normal;
+            line-height: 36px; }
+          .section3 ul li.text .info p {
+            font-size: 12px;
+            line-height: 24px;
+            margin-top: 15px; }
+      .section3 ul li .proimg {
+        padding: 15px 0;
+        height: 200px;
+        overflow: hidden; }
+        .section3 ul li .proimg img {
+          width: 220px;
+          display: block;
+          margin: 0 auto; }
+      .section3 ul li .protitle {
+        font-size: 14px;
+        height: 40px;
+        line-height: 20px;
+        padding: 0 20px;
+        text-align: left; }
+      .section3 ul li .probottom {
+        margin-top: 10px;
+        padding: 0 20px; }
+        .section3 ul li .probottom b {
+          font-size: 16px;
+          margin-right: 12px;
+          float: left;
+          display: block;
+          line-height: 25px; }
+        .section3 ul li .probottom .buylink {
+          line-height: 25px;
+          background-color: #b20e19;
+          padding: 0 5px;
+          color: #FFFFFF;
+          font-size: 14px;
+          text-align: center;
+          border-radius: 5px;
+          display: inline-block;
+          float: right; }
+          .section3 ul li .probottom .buylink i {
+            width: 20px;
+            height: 15px;
+            display: inline-block;
+            background: url("../images/cart-icon.png") no-repeat center center transparent;
+            margin-right: 3px;
+            vertical-align: top;
+            margin-top: 5px; }
+
+/*# sourceMappingURL=section3.css.map */
